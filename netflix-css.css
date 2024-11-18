@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.row_poster{
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.row_posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.row_poster:hover{
+    transform: scale(2);
+}
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    color: white;
+    margin-left: 10px;
+}
+.row_post{
+    max-height: 250px;
+}
+.banner{
+    background: url("C:\full stack\images\downloads\money_heist.jpg");
+    background-size: cover;
+    color: white;
+    height: 450px;
+    object-fit: contain;
+}
+.banner_contents{
+    margin-left: 10px;
+    height: 190px;
+    padding-top: 140px;
+}
+.banner_title{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.banner_desciption{
+    width: 45rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    font-size: 1srem;
+    max-width: 350px;
+}
+.banner_button{
+    border-radius: 5px;
+    padding: 2rem;
+    color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(50, 50, 50,0.5);
+    cursor: pointer;
+}
+.nav_logo{  
+    width: 80px;
+    object-fit: contain;
+}
+.nav_logo:hover{
+    padding: 80px;
+}
+.nav_avatar{
+    width: 30px;
+    object-fit: contain;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+}
+.banner_fade{
+    background: linear-gradient(180deg,transparent,rgb(37,37,37,.6)),#111;
+    height: 7.4rem;
+    margin-top: 145px;
+}
