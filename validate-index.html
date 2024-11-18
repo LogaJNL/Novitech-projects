@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+</head>
+<style>
+body{
+    margin: 0;
+}
+
+.box{
+    width:550px;
+    height: 450px;
+    margin-left:350px;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+h1{
+    text-align: center;
+}
+input,label{
+    display: block;
+    width: 500px;
+    padding:10px;
+    margin-left:10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+input{
+    border:1px solid ;
+
+}
+input[type="submit"]{
+    background-color:darkseagreen;
+    align-items: center;
+}
+
+</style>
+<body>
+    <div class="box">
+    <h1>Simple Form Validation</h1>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span id="nameError" class="error"></span>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailError" class="error"></span><br>
+        <input type="submit" value="SignIn">
+    </form>
+</div>
+</body>
+</html>

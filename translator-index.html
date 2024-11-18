@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        background: black;
+        color: antiquewhite;
+        font-size: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+    header{
+        text-align: center;
+    }
+    .subtit{
+        padding: 20px;
+        background: rgb(223, 132, 146);
+    }
+    button{
+        padding: 10px;
+        text-align: center;
+        background: black;
+        color: white;
+        margin: 40px;
+        width: 30%;
+        outline: none;
+    }
+    div p{
+        text-align: center;
+        margin: 50px;
+    }
+    .demo{
+        padding: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <strong>
+        <h2 class="main">Welcome to the translator</h2>
+        <p class="subtit">Explore Language Translator</p>
+        <button href="#demo">About Us</button>
+    </strong>
+    </header>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam repellendus voluptatibus aperiam 
+            aliquam veniam porro eligendi quidem aspernatur quo, cumque sint reprehenderit nesciunt, tempora
+             magni dolore blanditiis modi deserunt harum unde? Magni minus iste modi sit esse at corporis aperiam
+              et ab, quae sint dolor libero laboriosam expedita atque optio voluptate explicabo, nesciunt minima 
+              consequatur dolorem! Ducimus itaque magni tempora doloribus culpa? Eaque, repudiandae, quaerat,
+               voluptas deleniti et iusto non reiciendis cumque illum doloribus dolorem dolorum necessitatibus
+                animi natus porro aspernatur quo fugit aut! Repellat qui mollitia 
+            praesentium atque quidem exercitationem minima a consequuntur autem neque. Cumque, magni deserunt.</p>
+    </div>
+    <!-- <iframe src="" frameborder="0" width="100%" height="300px">
+    </iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DyhcTJfrU-8?si=Hwo6bIMlcXouZTLQ"
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <video src="C:\Users\DELL\Videos\drones.mp4" controls></video>
+     -->
+    <p id="demo">
+    
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(  
+                {pagelanguage:'en'},
+                'demo'
+            );
+        }
+    </script>
+    </p>
+</body>
+</html>
